@@ -1082,6 +1082,19 @@ h2 em {
   color: #e1a56e;
 }
 
+.contact-detail .maps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #f0bf8b;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.contact-detail .maps-link:hover {
+  color: #fffaf3;
+}
+
 .footer {
   min-height: 110px;
   background: #f5eee3;

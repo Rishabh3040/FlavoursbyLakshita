@@ -18,6 +18,8 @@ import { menuItems, menuCategories } from "./data/menu";
 
 const WHATSAPP_NUMBER = "917529071948";
 const RESTAURANT_NAME = "Flavours by Lakshita";
+const GOOGLE_MAPS_URL =
+  "https://www.google.com/maps/place/Flavors+by+Lakshita/@26.0129564,79.4359848,627m/data=!3m2!1e3!4b1!4m6!3m5!1s0x399d7f68e4644ea7:0x2d4635424854d608!8m2!3d26.0129564!4d79.4359848!16s%2Fg%2F11nw35qx4_?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D";
 
 function whatsappLink(
   message = "Hello Flavours by Lakshita, I would like to know more about your menu.",
@@ -280,7 +282,16 @@ function Contact() {
             </span>
             <div>
               <small>FIND US</small>
-              <p>Location details coming soon</p>
+              <a
+                className="maps-link"
+                href={GOOGLE_MAPS_URL}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <MapPin size={15} aria-hidden="true" />
+                <span>Open in Google Maps</span>
+                <ArrowRight size={14} aria-hidden="true" />
+              </a>
             </div>
           </div>
           <div className="contact-social">
