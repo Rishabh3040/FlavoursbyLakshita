@@ -35,6 +35,7 @@ function Header() {
     ["Contact", "#contact"],
   ];
   return (
+    <>
     <header className="site-header">
       <a className="brand" href="#home" aria-label="Flavours by Lakshita home">
         <span className="brand-mark">L</span>
@@ -66,6 +67,25 @@ function Header() {
         </a>
       </nav>
     </header>
+    <a
+      className="location-bar"
+      href={GOOGLE_MAPS_URL}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Open Flavours by Lakshita in Google Maps"
+    >
+      <span className="location-pin">
+        <MapPin size={19} aria-hidden="true" />
+      </span>
+      <span className="location-copy">
+        <strong>Find us on Google Maps</strong>
+        <small>Get directions to Flavours by Lakshita</small>
+      </span>
+      <span className="location-action">
+        Open map <ArrowRight size={15} aria-hidden="true" />
+      </span>
+    </a>
+    </>
   );
 }
 
